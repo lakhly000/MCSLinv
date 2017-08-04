@@ -1,0 +1,28 @@
+####
+# Example input for MCSLinv program. 
+# Length scale is mm.
+####
+
+# Material Parameters (should be updated by the user):
+
+1.493			# Index of refraction (n)
+0.621			# Anisotropy (g)
+6.10			# Thickness (t) in mm
+
+# Search Parameters:
+
+0.001			# eta_a minimum (eta_a = mu_a/(mu_a+mu_s))
+0.015			# eta_a maximum
+15			# number of eta_a to test
+
+1.0			# mu_t minimum in 1/mm (mu_t = mu_a+mu_s)
+4.2			# mu_t maximum in 1/mm
+17			# number of mu_t to test
+
+20000			# Starting number of particles
+7			# Number of search iterations
+
+1			# Number of processors
+24			# Seed for random number generator (type 0 to use time(NULL))
+
+669.8			# Radius of detector in mm (enter large number to neglect finite radius)
